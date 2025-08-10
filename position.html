@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .mainnav{
+            position: fixed;
+            background-color: beige;
+            height: 50px;
+            width: 100%;
+            z-index: 9999;
+        }
+    .nav{
+        margin-left: 700px;  
+    }
+    .nav>span{
+        padding-top: 10px;
+        padding-left: 20px;
+        font-size: x-large;
+        letter-spacing: 0.2em;
+    }
+    .img1>img{
+        width: 100%;
+        position: relative;
+        z-index: 1; 
+    }
+    .img1>p{
+        letter-spacing: 0.1em;
+        position: absolute;
+        left: 500px;
+        top: 350px;
+        color:white;
+        font-size: 3em;
+        z-index: 22;
+    }
+    .img1>p>b{
+        background-color: rgb(63,60,60);
+    }
+    #projects{
+        width: 100%;
+    }
+    .parent{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .child{
+        width: 320px;
+        display: inline-block;
+        margin-left: 40px;
+        position: relative;
+    }
+    .child>p{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        letter-spacing: 0.17em;
+    }
+    .child img{
+        width: 100%;
+    }
+    .parent1{
+        width: 100%;
+        margin-top: 50px;
+        padding-left: 60px;
+    }
+    .child1>img,button{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .child1{
+        display: inline-block;
+        width: 23%;
+        padding: 5px;
+    }
+    .child1>button{
+        padding: 7px;
+        font-size: large;
+    }
+    #About p,h4{
+        letter-spacing: 0.1em;
+    }
+    .hara{
+        width: 90%;
+        margin: auto;
+    }
+    .hara p{
+        width: 100%;
+        background-color: black;
+        margin-top: 5px;
+        color: antiquewhite;
+        height: 80px;
+        text-align: center;
+        padding: 10px;
+        letter-spacing: 0.1em;
+    }
+    .hara img{
+        width: 100%;
+    }
+    input,form{
+        width: 100%;
+        padding: 15px;
+    }
+    form button{
+        width: 20%;
+        height: 40px;
+        background-color: black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="mainnav">
+        <span style="font-size: x-large; margin-left: 30px;">
+        <b>BR</b> architecture
+        </span>
+        <span class="nav">
+         <span><a href="#Projects">Projects</a></span>
+         <span><a href="#About">About</a></span>
+         <span><a href="#Contact">Contact</a></span>
+        </span>
+    </div>
+    <div class="img1">
+       <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
+       <p><b>BR</b> architecture</p>
+    </div>
+    <section id="Projects">
+        <h2 style="margin-left: 30px;margin-top: 20px;">Projects</h2>
+        <div class="parent">
+            <div class="child">
+                <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                <p>Summer House</p>
+            </div>
+            <div class="child">
+                 <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+                 <p>Brick House</p>
+            </div>
+            <div class="child">
+                <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+                <p>Renovated</p>
+            </div>
+            <div class="child">
+                <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+                <p>Barn House</p>
+            </div>
+            <div class="child">
+             <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+             <p>Summer House</p>
+            </div>
+             <div class="child">
+                 <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+                 <p>Brick House</p>
+            </div>
+            <div class="child">
+                <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+                <p>Renovated</p>
+            </div>
+            <div class="child">
+                <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+                <p>Barn House</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="About">
+        <h2 style="margin-left: 30px;margin-top: 20px;">About</h2>
+        <br>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         <div class="parent1">
+            <div class="child1">
+               <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+               <h2>John Doe</h2>
+               <br>
+               <h4>CEO & Founder</h4>
+               <br>
+               <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+               <button>Contact</button>
+            </div>
+            <div class="child1">
+              <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+              <h2>Jane doe</h2>
+              <br>
+              <h4>Architect</h4>
+              <br>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <button>Contact</button>
+            </div>
+            <div class="child1">
+            <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+            <h2>Mike Ross</h2>
+            <br>
+            <h4>Architect</h4>
+            <br>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button>Contact</button>
+            </div>
+            <div class="child1">
+             <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+             <h2>Dan Star</h2>
+             <br>
+             <h4>Architect</h4>
+             <br>
+             <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+             <button>Contact</button>
+            </div>
+         </div>
+    </section>
+    <section id="Contact">
+         <h2 style="margin-left: 30px;margin-top: 20px;">Contact</h2>
+        <div class="hara">
+        <h3 style="margin-left: 30px;margin-top: 15px;">Lets get in touch and talk about your next project.</h3>
+         <br>
+         <br>
+        <form>
+            <input type="text" placeholder="name">
+            <br>
+            <br>
+            <input type="email" placeholder="Email">
+            <br>
+            <br>
+            <input type="text" placeholder="Subject"><br><br>
+            <input type="text" placeholder="Comment">
+            <br>
+            <br>
+            <button>SEND MESSAGE</button>
+        </form>
+         <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+         <p>Powered by<a href="" style="color: aliceblue;" >w3.css</a></p>
+        </div> 
+    </section>
+
+</body>
+</html>
