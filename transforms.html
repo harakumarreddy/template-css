@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mid>p{
+            height: 200px;
+            width: 300px;
+            color: burlywood;
+            background-color: lightgreen;
+            border-radius: 50px;
+            position: absolute;
+            left: 550px;
+            bottom: 200px;
+            text-align: auto;
+        }
+        .mid:hover >p{
+            transition-delay: 2s;
+            transition: 2s;
+            background-color: black;
+            transform: translateX(300px);
+            transform: skewX(-35deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="mid">
+         <p>.Hover me!</p>
+    </div>
+</body>
+</html>
